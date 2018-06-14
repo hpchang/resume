@@ -23,15 +23,27 @@
             {% endif %} -->
             
             {% if WEBSITE %}
-            <li class="website"><i class="fa fa-globe"></i><a href="http://{{WEBSITE}}" target="_blank">{{WEBSITE}}</a></li>
+            <li class="website"><i class="fa fa-google-plus-square"></i><a href="http://{{WEBSITE}}" target="_blank">{{WEBSITE}}</a></li>
             {% else %}
-            <li class="website"><i class="fa fa-globe"></i><a href="http://blog.webjeda.com" target="_blank">blog.webjeda.com</a></li>
+            <li class="website"><i class="fa fa-google-plus-square"></i><a href="http://blog.webjeda.com" target="_blank">blog.webjeda.com</a></li>
             {% endif %}
-            
+
+            {% if FACEBOOK %}
+            <li class="facebook"><i class="fa fa-facebook-square"></i><a href="https://www.facebook.com/{{FACEBOOK}}" target="_blank">{{FACEBOOK}}</a></li>
+            {% else %}
+             <li class="facebook"><i class="fa fa-facebook-square"></i><a href="https://twitter.com/@webjeda" target="_blank">@webjeda</a></li>
+            {% endif %}
+
             {% if LINKEDIN %}
             <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/{{LINKEDIN}}" target="_blank">linkedin.com/in/{{LINKEDIN}}</a></li>
             {% else %}
             <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/sharath-kumar-87669956" target="_blank">linkedin.com/in/sharathdt</a></li>
+            {% endif %}
+
+            {% if TWITTER %}
+            <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/{{TWITTER}}" target="_blank">{{TWITTER}}</a></li>
+            {% else %}
+             <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/@webjeda" target="_blank">@webjeda</a></li>
             {% endif %}
             
             {% if GITHUB %}
@@ -39,13 +51,7 @@
             {% else %}
             <li class="github"><i class="fa fa-github"></i><a href="http://github.com/sharu725" target="_blank">github.com/sharu725</a></li>
             {% endif %}
-            
-            {% if TWITTER %}
-            <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/{{TWITTER}}" target="_blank">{{TWITTER}}</a></li>
-            {% else %}
-             <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/@webjeda" target="_blank">@webjeda</a></li>
-            {% endif %}
-            
+                        
         </ul>
     </div><!--//contact-container-->
    {% include 'includes/education.html' %}
